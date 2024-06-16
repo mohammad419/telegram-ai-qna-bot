@@ -35,7 +35,6 @@ rag_telegram_bot/
 │   │   │   ├── chatgpt.py
 │   └── services/
 │       ├── __init__.py
-│       ├── rag_service.py
 │       └── response_generator.py
 ├── requirements.txt
 ├── .env
