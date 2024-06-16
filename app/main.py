@@ -22,7 +22,7 @@ async def echo_handler(message: Message) -> None:
     Handler to generate a response using RAG (Retrieval-Augmented Generation).
     """
     try:
-        # Generate response based on user input
+        # # Generate response based on user input
         response = generate_rag_response(message.text)
         await message.answer(response)
     except TypeError:
