@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram.filters import CommandStart
 from aiogram.enums import ParseMode
-from config import settings
+from config import *
 from service.rag_response_generator import generate_rag_response
 
 # Initialize the Dispatcher
@@ -31,7 +31,7 @@ async def echo_handler(message: Message) -> None:
 
 async def main() -> None:
     # Initialize the Bot instance with default bot properties
-    bot = Bot(token=settings.bot_token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot(token=bot_token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
     # Start polling for incoming messages
     await dp.start_polling(bot)
