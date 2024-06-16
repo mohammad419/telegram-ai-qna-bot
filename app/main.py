@@ -1,8 +1,9 @@
 import asyncio
+from aiogram.client.default import DefaultBotProperties
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message
-from aiogram.dispatcher.filters import CommandStart
-from aiogram.types import ParseMode
+from aiogram.filters import CommandStart
+from aiogram.enums import ParseMode
 from config import settings
 from service.rag_response_generator import generate_rag_response
 
@@ -10,12 +11,12 @@ from service.rag_response_generator import generate_rag_response
 dp = Dispatcher()
 
 # Command handler for '/start'
-@dp.message_handler(CommandStart())
+@dp.message(CommandStart())
 async def welcome(message: Message):
     await message.answer("Hello! \nI'm an AI-powered Telegram bot created by Mohammad!\nHow may I help you with your queries related to the BERT paper?")
 
 # Default message handler
-@dp.message_handler()
+@dp.message()
 async def echo_handler(message: Message) -> None:
     """
     Handler to generate a response using RAG (Retrieval-Augmented Generation).
@@ -30,7 +31,7 @@ async def echo_handler(message: Message) -> None:
 
 async def main() -> None:
     # Initialize the Bot instance with default bot properties
-    bot = Bot(token=settings.bot_token, parse_mode=ParseMode.HTML)
+    bot = Bot(token=settings.bot_token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
     # Start polling for incoming messages
     await dp.start_polling(bot)
