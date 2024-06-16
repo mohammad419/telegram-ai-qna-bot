@@ -88,7 +88,7 @@ The bot has several handlers to manage different commands and messages:
 - **Start Handler (`start.py`):** Welcomes the user and clears past conversation context.
 - **Clear Handler (`clear.py`):** Clears the previous conversation and context.
 - **Help Handler (`help.py`):** Provides a help menu with available commands.
-- **RAG QnA Handler (`chatgpt.py`):** Processes the user's input and generates a response using OpenAI Assistant RAG (Retrieval-Augmented Generation) for Document QnA.
+- **RAG QnA Handler (`rag_response_generator.py`):** Processes the user's input and generates a response using OpenAI Assistant RAG (Retrieval-Augmented Generation) for Document QnA.
 
 ## Contributing
 
@@ -101,7 +101,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - [aiogram](https://github.com/aiogram/aiogram) for Telegram bot functionality.
-- [OpenAI Assistant]([https://openai.com/](https://platform.openai.com/docs/assistants/overview)) for the RAG Application for Document QnA.
+- [OpenAI Assistant](https://openai.com/](https://platform.openai.com/docs/assistants/overview) for the RAG Application for Document QnA.
 
 ## Contact
 
