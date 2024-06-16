@@ -1,7 +1,7 @@
 
 # RAG Powered Telegram Bot
 
-This project contains the implementation of a Telegram bot that uses the OpenAI Assistant API to generate responses to user messages. The bot is built using `aiogram` for Telegram bot functionality and `openai` for generating responses.
+This project contains the implementation of a Telegram bot that uses the OpenAI Assistant to generate responses to user messages. The bot is built using `aiogram` for Telegram bot functionality and `openai` for generating responses.
 
 ## Features
 
