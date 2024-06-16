@@ -101,7 +101,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - [aiogram](https://github.com/aiogram/aiogram) for Telegram bot functionality.
-- [OpenAI Assistant](https://openai.com/](https://platform.openai.com/docs/assistants/overview) for the RAG Application for Document QnA.
+- [OpenAI Assistant](https://platform.openai.com/docs/assistants/overview) for the RAG Application for Document QnA.
 
 ## Contact
 
