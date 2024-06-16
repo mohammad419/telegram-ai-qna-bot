@@ -36,6 +36,9 @@ async def main() -> None:
     # Start polling for incoming messages
     await dp.start_polling(bot)
 
+# Entry point for Vercel
+handler = dp 
+
 if __name__ == "__main__":
     # Run the main coroutine
     asyncio.run(main())
