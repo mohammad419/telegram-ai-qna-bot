@@ -1,4 +1,4 @@
-from config import *
+from app.config import *
 
 def generate_rag_response(query):
 

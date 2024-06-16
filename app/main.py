@@ -4,8 +4,8 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram.filters import CommandStart
 from aiogram.enums import ParseMode
-from config import *
-from service.rag_response_generator import generate_rag_response
+from app.config import *
+from app.service.rag_response_generator import generate_rag_response
 
 # Initialize the Dispatcher
 dp = Dispatcher()
